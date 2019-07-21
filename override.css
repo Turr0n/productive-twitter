@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
 nav a div div,
 nav div div div {
   font-size: 16px !important;
@@ -30,11 +32,14 @@ div[data-testid="primaryColumn"] {
   box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.3);
   background-color: rgb(21, 32, 43);
   border-color: #0d161e !important;
+
+  margin-top: 10px;
+  /*  */
 }
 
 body {
   background: #151e27 !important;
-  font-family: "Avenir", Helvetica, Arial, sans-serif !important;
+  font-family: 'Noto Sans', sans-serif !important;
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
 }
@@ -44,7 +49,7 @@ div,
 article,
 aside,
 main {
-  font-family: "Avenir", Helvetica, Arial, sans-serif !important;
+  font-family: 'Noto Sans', sans-serif !important;
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
   letter-spacing: 0.01em;
@@ -52,7 +57,7 @@ main {
 
 article {
   border-color: #151e27 !important;
-  padding: 20px 10px 5px 10px !important;
+  padding: 20px 10px !important;
   font-size: 17px;
   max-width: 650px !important;
   transition: none !important;
@@ -93,8 +98,8 @@ div[role="blockquote"] {
   padding: 10px;
 }
 
-article div div a + div:empty {
-  background: linear-gradient(rgb(242, 101, 102, 0.8), #1d1f33);
+article div div a+div:empty {
+  background: rgb(242, 101, 102, 0.8);
 }
 
 div[data-testid="sidebarColumn"] {
@@ -107,7 +112,7 @@ form[aria-label="Search Twitter"][role="search"] {
   position: fixed !important;
   width: 270px !important;
   top: 8px;
-  right: 20px;
+  right: 15%;
 }
 
 div[aria-modal="true"] div div div div div div div div div div div div div {
@@ -115,7 +120,7 @@ div[aria-modal="true"] div div div div div div div div div div div div div {
   border-width: 0 !important;
 }
 
-div[data-testid="tweet"] > div > div:first-child:empty {
+div[data-testid="tweet"]>div>div:first-child:empty {
   display: none !important;
 }
 
@@ -137,6 +142,25 @@ div[aria-label="New Tweets are available. Push period to go to the beginning of 
   box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.3) !important;
 }
 
-article[data-testid="tweetDetail"] > div:first-child {
+article[data-testid="tweetDetail"]>div:first-child {
   display: none;
+}
+
+
+/*  */
+div[data-testid='primaryColumn']>div>div>div.css-1dbjc4n.r-aaos50.r-1or9b2r {
+  background: #111820;
+}
+
+article div[data-testid='tweet']>div:nth-child(2) {
+  padding-top: 0px;
+}
+
+form[aria-label="Search Twitter"][role="search"]>div:nth-child(2) {
+  margin-top: 10px;
+}
+
+#react-root>div>div>div>main>div>div.css-1dbjc4n.r-aqfbo4.r-1niwhzg.r-16y2uox>div>div.css-1dbjc4n.r-yfoy6g.r-18bvks7.r-1ljd8xs.r-13l2t4g.r-1phboty.r-1jgb5lz.r-1ye8kvj.r-13qz1uu.r-184en5c>div>div>div.css-1dbjc4n.r-yfoy6g.r-184en5c {
+  height: 0px;
+  visibility: hidden;
 }
